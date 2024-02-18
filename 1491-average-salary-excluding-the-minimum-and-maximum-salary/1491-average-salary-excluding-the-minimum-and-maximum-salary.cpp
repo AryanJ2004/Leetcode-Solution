@@ -3,17 +3,14 @@ public:
     double average(vector<int>& salary) {
         double max=*max_element(salary.begin(),salary.end());
         double min=*min_element(salary.begin(),salary.end());
-        double sz=salary.size()-2;
         double avg=0;
-        for(int i=0;i<salary.size();i++)
+        for(auto s:salary)
         {
-            if(salary[i]!=max && salary[i]!=min)
-            {
-                avg+=salary[i];
-            }
+            if(s!=max && s!=min)
+            avg+=s;
         }
         
-        return avg/sz;
+        return avg/(salary.size()-2);
         
 
     }
