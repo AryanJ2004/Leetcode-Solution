@@ -4,7 +4,7 @@ public:
         vector<int>sq;
         for(auto num:nums)
         {
-            num=num*num;
+            num*=num;
             sq.push_back(num);
         }
         sort(sq.begin(),sq.end());
