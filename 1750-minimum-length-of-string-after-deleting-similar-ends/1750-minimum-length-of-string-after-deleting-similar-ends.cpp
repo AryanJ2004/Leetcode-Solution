@@ -5,7 +5,7 @@ public:
         int r=s.length()-1;
         while(l<r && s[l]==s[r])
         {
-            char current=s[l];
+            char current=s[r];
             while(l<=r && s[l]==current)
             l++;
             while(r>=l && s[r]==current)
