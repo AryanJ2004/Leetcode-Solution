@@ -7,9 +7,13 @@ public:
         {
             char current=s[r];
             while(l<=r && s[l]==current)
+            {
             l++;
+            }
             while(r>=l && s[r]==current)
+            {
             r--;
+            }
         }
         return r-l+1;
     }
